@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:text="crie um login:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/caixa_cinza"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="senha"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="468dp"
+        android:text="Crie uma senha:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="insira seu CPF:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextText3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/caixa_cinza"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="confirmar senha"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:text="Digite seu email:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/caixa_cinza"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="email"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextcpf"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/caixa_cinza"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="CPF"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextText4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/caixa_cinza"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Nome"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/btn_preto"
+        android:gravity="center"
+        android:text="REGISTRAR-SE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView4"
+        android:layout_width="341dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_preta_sem_fundo2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

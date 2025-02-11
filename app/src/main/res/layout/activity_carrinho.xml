@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCarrinho">
+
+    <!-- Texto para carrinho vazio -->
+    <TextView
+        android:id="@+id/emptyCartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O carrinho está vazio"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- RecyclerView para os itens do carrinho -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/emptyCartText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        tools:listitem="@layout/cart_item" />
+
+    <!-- Rodapé para preço total e botão -->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Texto do valor total -->
+        <TextView
+            android:id="@+id/totalPriceText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total: R$ 0.00"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_gravity="start" />
+
+        <!-- Botão de finalizar compra -->
+        <Button
+            android:id="@+id/finishPurchaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Finalizar Compra "
+            android:background="@drawable/btn_preto"
+            android:textColor="@color/white"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

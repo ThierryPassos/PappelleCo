@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAdmin">
+
+    <!-- Logo -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewLogoAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/logo_preta_sem_fundo2"
+        android:contentDescription="Logo do Administrador" />
+
+    <FrameLayout
+        android:id="@+id/maskableFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/imageViewLogoAdmin"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/caixa_cinza">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageRV"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </FrameLayout>
+
+    <!-- RecyclerView para exibir os itens -->
+
+    <!-- Botão flutuante para adicionar novos itens -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adminItemListRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maskableFrameLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddItem"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Adicionar Item"
+        android:backgroundTint="@color/black"
+        app:srcCompat="@drawable/ic_add" />
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityInicial">
+
+    <!-- Logo -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/logo_preta_sem_fundo2" />
+
+    <!-- Carrossel -->
+    <FrameLayout
+        android:id="@+id/maskableFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/imageView4"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/caixa_cinza">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageRV"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </FrameLayout>
+
+    <!-- Lista de Produtos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemListRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maskableFrameLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <!-- Botão do carrinho no canto inferior direito -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_cart"
+        android:backgroundTint="@color/black"/>
+</RelativeLayout>
+
